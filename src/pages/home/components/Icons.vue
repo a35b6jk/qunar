@@ -22,53 +22,15 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconsList: Array
+  },
   data: function() {
     return {
       swiperOption: {
         autoplay: false,
         pagination: '.swiper-pagination',
       },
-      "iconsList": [{
-        "id": "0001",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-        "description": "景点门票"
-      }, {
-        "id": "0002",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/3e/86314b2af03b7502.png",
-        "description": "水上乐园"
-      }, {
-        "id": "0003",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png",
-        "description": "成都必游"
-      }, {
-        "id": "0004",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/6a/45f595250c73d102.png",
-        "description": "夏日玩水"
-      }, {
-        "id": "0005",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
-        "description": "亲子游"
-      }, {
-        "id": "0006",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/50/26ffa31b56646402.png",
-        "description": "海洋馆"
-      }, {
-        "id": "0007",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
-        "description": "一日游"
-      }, {
-        "id": "0008",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
-        "description": "游乐场"
-      }, {
-        "id": "0009",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/95/8d02011d149bdb02.png",
-        "description": "直通车"
-      }, {
-        "id": "0010",
-        "imgUrl": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
-        "description": "全部玩乐"
-      }]
     }
   },
   computed: {

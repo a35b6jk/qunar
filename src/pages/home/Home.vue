@@ -45,7 +45,7 @@
           this.iconsList = data.iconsList;
           this.recommendList = data.recommendList;
           this.weekendList = data.weekendList;
-          console.log(this.iconsList);
+          console.log(this.swiperList);
         }
       }
     },

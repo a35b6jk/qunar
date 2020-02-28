@@ -1,7 +1,7 @@
 <!-- The ref attr used to find the swiper instance -->
 <template>
   <div class="sw-wrapper">
-    <swiper :options="swiperOption" >
+    <swiper :options="swiperOption" v-if="isSwiperShow">
       <!-- slides -->
       <swiper-slide v-for="item in swiperList" :key="item.id">
         <img class="swiper-img" :src="item.imgUrl" />
@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     isSwiperShow: function() {
-      console.log(swiperList);
+      //console.log(swiperList);
       return this.swiperList.length
     }
   }

@@ -8,10 +8,12 @@
       <div class="kw">输入城市/景点/游玩主题</div>
       <input class="header-input" type="text" />
     </div>
+    <router-link to="/city">
     <div class="header-right">
       城市
       <span class="iconfont">&#xe6aa;</span>
     </div>
+    </router-link>
   </div>
 
 </template>

@@ -34,7 +34,7 @@
 </template>
 
 <script>
-
+import { mapMutations } from 'vuex'
 import BScroll from 'better-scroll'
 export default {
 	name: 'CityList',
@@ -52,8 +52,12 @@ export default {
 			this.letter = e.target.innerText;
 		},
 		handleCityClick: function(city) {
+			this.changeCityName(city)
 			this.$router.push('/')
-		}
+		},
+		...mapMutations({
+			changeCityName: 'changeCityName'
+		})
 	},
 	computed: {
 		letters: function() {
